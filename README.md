@@ -1,3 +1,3 @@
 # E&S Home Care Solutions
 
-Website for E&S Homecare Solutions built on Wordpress.
+Styling contents for E&S Homecare Solutions websites built on Wordpress.
