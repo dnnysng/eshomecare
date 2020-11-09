@@ -1,0 +1,275 @@
+/* global */
+
+/* color variables */
+$black: #333333;
+$primary: #165dab;
+$primaryDark: #132640;
+$gray: #857f6f;
+$lightGray: #f2f2f2;
+$white: #fdfdfd;
+
+/* button */
+
+button {
+  transition: 0.3s all ease-in-out;
+}
+
+/* social menu */
+div.main-nav > ul#menu-social > li > a {
+  padding: 0px 15px;
+  font-weight: 400;
+}
+
+/* logo section */
+div.inside-header {
+  padding: 30px 0px 10px 0px;
+}
+
+/* register button */
+@media (min-width: 769px) {
+  .main-navigation .main-nav ul li.nav-register a {
+    border: 2px solid $primary;
+    color: $primary;
+    font-weight: 600;
+    line-height: 2.5;
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-navigation .main-nav ul li.nav-register:hover a {
+    border: 2px solid $primaryDark;
+    background: $primaryDark;
+    color: #fdfdfd;
+  }
+}
+
+/* end global */
+
+/* home page */
+
+/* hero section */
+#heroSection {
+  width: max-content;
+  padding: 10px 10px 1px 10px;
+  background: rgba(255, 255, 255, 0.4);
+
+  h1 {
+    background: $white;
+    color: black;
+    padding: 20px;
+  }
+
+  button {
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+}
+
+/* programs section */
+
+#programsSection {
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.7rem;
+    margin: 0;
+    text-align: center;
+
+    h3 {
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  li {
+    margin: 5px;
+    padding: 20px;
+    background: #165dab;
+    height: 70px;
+    transition: 0.3s all ease-in-out;
+  }
+
+  li:hover {
+    background: #132640;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+/*Form Message Box*/
+div.wpforms-container-full .wpforms-form .wpforms-field.wpforms-field-textarea {
+  width: 100%;
+  clear: both;
+}
+
+/*Form Submit Button*/
+div.wpforms-container-full .wpforms-form input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  width: 100%;
+  background-color: #336699;
+  color: #fdfdfd;
+  font-size: 1em;
+  padding: 15px 0px 15px 0px;
+}
+
+/*Form Submit Button Hover*/
+div.wpforms-container-full .wpforms-form button:hover[type="submit"] {
+  width: 100%;
+  background-color: rgba(253, 207, 0, 0.9);
+  color: #333333;
+  font-size: 1em;
+  padding: 15px 0px 15px 0px;
+}
+
+/*Programs section styling*/
+div.programs-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.programs {
+  padding: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  background: #fdfdfd;
+  background-size: cover;
+  border-top: 5px solid #336699;
+  border-bottom: 5px solid #336699;
+}
+
+div.programs:hover {
+  border-top: 5px solid #fdcf00;
+  border-bottom: 5px solid #fdcf00;
+}
+
+#generate-section-2 > div > div > div {
+  max-height: 375px;
+}
+
+#generate-section-3 {
+  margin-top: 100px;
+}
+
+/*responsive video*/
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  border: 4px solid #fdfdfd;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* mobile */
+
+@media (max-width: 910px) {
+  .top-bar,
+  div.main-nav > ul#menu-social,
+  .secondary-navigation {
+    display: none;
+  }
+}
+
+/*remove top bar contact buttons from mobile*/
+@media (max-width: 600px) {
+  /* logo section */
+  div.inside-header {
+    padding: 20px 0px 0px 0px;
+  }
+
+  /* hero section */
+  .homeHeroImage {
+    background-position: center;
+  }
+
+  #heroSection {
+    width: 100%;
+    padding: 10px 10px 1px 10px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+
+    h1 {
+      padding: 20px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin: 0px 0px 10px 0px;
+      font-size: 0.8rem;
+      width: 100%;
+    }
+  }
+
+  /* programs section */
+
+  #programsSection {
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      text-transform: uppercase;
+      color: white;
+      font-size: 0.8rem;
+      margin: 0;
+      text-align: center;
+
+      h3 {
+        color: white;
+        font-size: 0.8rem;
+        margin: 0px;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    li {
+      padding: 5px;
+      background: #165dab;
+      height: 50px;
+    }
+
+    li:hover {
+      background: #132640;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+  }
+}
