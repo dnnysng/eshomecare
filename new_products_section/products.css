@@ -1,3 +1,37 @@
-
+/* color variables */
+#trainingPrograms {
+  padding: 2rem;
+  background: #fdfdfd;
+}
+#trainingPrograms .programCard {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1rem;
+}
+#trainingPrograms .programCard .image {
+  background: #132640;
+  display: flex;
+  justify-content: center;
+  height: 205px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+#trainingPrograms .programCard .image svg {
+  height: 400px;
+  position: relative;
+  top: -32;
+}
+#trainingPrograms .programCard .info {
+  padding: 0 1rem 1rem 1rem;
+  background: #fdfdfd;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+#trainingPrograms .programCard h3 {
+  color: #165dab;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=products.css.map */
