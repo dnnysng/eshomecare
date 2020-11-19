@@ -34,7 +34,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-desaturated.png");
+      background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-original.png");
       background-repeat: no-repeat;
       background-size: initial;
       background-position: center;
@@ -59,13 +59,6 @@ body {
           left: 75;
         }
       }
-    }
-
-    .image:hover {
-      background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-original.png");
-      background-repeat: no-repeat;
-      background-size: initial;
-      background-position: center;
     }
 
     .info {
@@ -122,6 +115,7 @@ body {
   }
 
   .programCard:hover {
+      background: $primary;
     filter: drop-shadow(0px 0px 1rem $primaryDark);
   }
 }
