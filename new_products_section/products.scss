@@ -12,10 +12,12 @@ body {
 
 #trainingPrograms{
     padding: 1rem;
-    background: $white;
+    background: $lightGray;
     display: flex;
-    flex-direction: column;
-    align-items: center;;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 
     .programCard {
         padding: 5px;
@@ -24,8 +26,8 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 350px;
-        margin-bottom: 1rem;
+        max-width: 270px;
+        margin: .5rem;
 
         .image {
             display: flex;
@@ -44,8 +46,7 @@ body {
             }
 
             img {
-                width: 100%;
-                max-width: 300px;
+                width: 300px;
                 filter: drop-shadow(0px 0px 1rem $primary);
             }
         }
@@ -62,7 +63,7 @@ body {
 
             h3 {
                 color: $primaryDark;
-                font-size: 1.2rem;
+                font-size: .9rem;
                 text-transform: uppercase;
             }
 
@@ -74,12 +75,17 @@ body {
                 font-size: .8rem;
             }
 
-            a {
+            .button {
+                font-size: .9rem;
                 text-decoration: none;
                 color: $white;
                 background: $primary;
                 padding: 10px;
                 border-radius: 5px;
+            }
+
+            .inactiveBtn {
+                background: $gray;
             }
         }
         
