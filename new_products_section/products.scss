@@ -10,13 +10,12 @@ body {
     font-family: 'open-sans', sans-serif;
 }
 
-#trainingPrograms{
+#trainingPrograms {
     padding: 1rem;
     background: $lightGray;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1000px;
     margin: 0 auto;
 
     .programCard {
@@ -28,6 +27,7 @@ body {
         width: 100%;
         max-width: 270px;
         margin: .5rem;
+        transition: .3s all ease-in-out;
 
         .image {
             display: flex;
@@ -46,9 +46,19 @@ body {
             }
 
             img {
+                position: relative;
+                left: 0;
                 width: 300px;
                 filter: drop-shadow(0px 0px 1rem $primary);
+                animation: slide 1s;
             }
+
+            @keyframes slide {
+                from{left: -100;}
+                to{left:0;}
+            }
+
+
         }
 
         .info {
@@ -82,6 +92,11 @@ body {
                 background: $primary;
                 padding: 10px;
                 border-radius: 5px;
+                transition: .3s all ease-in-out;
+            }
+
+            .button:hover {
+                background: $primaryDark;
             }
 
             .inactiveBtn {
@@ -97,5 +112,9 @@ body {
             font-size: .8rem;
             border-radius: 0px 0px 10px 10px;
         }
+    }
+
+    .programCard:hover {
+        filter: drop-shadow(0px 0px 1rem $primaryDark);
     }
 }
