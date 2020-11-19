@@ -1,6 +1,7 @@
 /* color variables */
 body {
   font-family: "open-sans", sans-serif;
+  background: #fdfdfd;
 }
 
 #trainingPrograms {
@@ -12,9 +13,9 @@ body {
   margin: 0 auto;
 }
 #trainingPrograms .programCard {
-  padding: 5px;
+  border: 1px solid #165dab;
   border-radius: 10px;
-  background: #165dab;
+  background: #132640;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -26,29 +27,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2MUi1v9/++JqQwwwCis5vAfzmNgYIALMFtkM4BUYqgAAOFxC+X/a3+DAAAAAElFTkSuQmCC) repeat;
+  background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-desaturated.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: center;
   height: 160px;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
-}
-#trainingPrograms .programCard .image svg {
-  height: 500px;
-  filter: drop-shadow(0px 0px 1rem #165dab);
+  transition: 0.3s all ease-in-out;
 }
 #trainingPrograms .programCard .image img {
   position: relative;
-  left: 0;
+  left: 75;
   width: 300px;
   filter: drop-shadow(0px 0px 1rem #165dab);
   animation: slide 1s;
 }
 @keyframes slide {
   from {
-    left: -100;
-  }
-  to {
     left: 0;
   }
+  to {
+    left: 75;
+  }
+}
+#trainingPrograms .programCard .image:hover {
+  background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-original.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: center;
 }
 #trainingPrograms .programCard .info {
   padding: 0 1rem 2rem 1rem;
@@ -70,7 +77,7 @@ body {
 #trainingPrograms .programCard .info .learnMore {
   font-size: 0.8rem;
 }
-#trainingPrograms .programCard .info .button {
+#trainingPrograms .programCard .info .button, #trainingPrograms .programCard .info .inactiveBtn {
   font-size: 0.9rem;
   text-decoration: none;
   color: #fdfdfd;

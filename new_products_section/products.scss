@@ -7,114 +7,121 @@ $lightGray: #f2f2f2;
 $white: #fdfdfd;
 
 body {
-    font-family: 'open-sans', sans-serif;
+  font-family: "open-sans", sans-serif;
+  background: #fdfdfd;
 }
 
 #trainingPrograms {
-    padding: 1rem;
-    background: $lightGray;
+  padding: 1rem;
+  background: $lightGray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+
+  .programCard {
+    border: 1px solid $primary;
+    border-radius: 10px;
+    background: $primaryDark;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 270px;
+    margin: 0.5rem;
+    transition: 0.3s all ease-in-out;
 
-    .programCard {
-        padding: 5px;
-        border-radius: 10px;
+    .image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-desaturated.png");
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: center;
+      height: 160px;
+      overflow: hidden;
+      border-radius: 10px 10px 0px 0px;
+      transition: 0.3s all ease-in-out;
+
+      img {
+        position: relative;
+        left: 75;
+        width: 300px;
+        filter: drop-shadow(0px 0px 1rem $primary);
+        animation: slide 1s;
+      }
+
+      @keyframes slide {
+        from {
+          left: 0;
+        }
+        to {
+          left: 75;
+        }
+      }
+    }
+
+    .image:hover {
+      background: url("https://esacademy-usa.com/wp-content/uploads/2020/11/es-academy-logo-original.png");
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: center;
+    }
+
+    .info {
+      padding: 0 1rem 2rem 1rem;
+      background: $white;
+
+      h2 {
+        color: $primary;
+        text-transform: uppercase;
+        margin-bottom: -1rem;
+      }
+
+      h3 {
+        color: $primaryDark;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .learnMore {
+        font-size: 0.8rem;
+      }
+
+      .button, .inactiveBtn{
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: $white;
         background: $primary;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 270px;
-        margin: .5rem;
+        padding: 10px;
+        border-radius: 5px;
         transition: .3s all ease-in-out;
+      }
 
-        .image {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background:url(
-             data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2MUi1v9/++JqQwwwCis5vAfzmNgYIALMFtkM4BUYqgAAOFxC+X/a3+DAAAAAElFTkSuQmCC
-                ) repeat;
-            height: 160px;
-            overflow: hidden;
-            border-radius: 10px 10px 0px 0px;
+      .button:hover {
+        background: $primaryDark;
+      }
 
-            svg {
-                height: 500px;
-                filter: drop-shadow(0px 0px 1rem $primary);
-            }
-
-            img {
-                position: relative;
-                left: 0;
-                width: 300px;
-                filter: drop-shadow(0px 0px 1rem $primary);
-                animation: slide 1s;
-            }
-
-            @keyframes slide {
-                from{left: -100;}
-                to{left:0;}
-            }
-
-
-        }
-
-        .info {
-            padding: 0 1rem 2rem 1rem;
-            background: $white;
-
-            h2 {
-                color: $primary;
-                text-transform: uppercase;
-                margin-bottom: -1rem;
-            }
-
-            h3 {
-                color: $primaryDark;
-                font-size: .9rem;
-                text-transform: uppercase;
-            }
-
-            p {
-                margin-bottom: 1rem;
-            }
-
-            .learnMore {
-                font-size: .8rem;
-            }
-
-            .button {
-                font-size: .9rem;
-                text-decoration: none;
-                color: $white;
-                background: $primary;
-                padding: 10px;
-                border-radius: 5px;
-                transition: .3s all ease-in-out;
-            }
-
-            .button:hover {
-                background: $primaryDark;
-            }
-
-            .inactiveBtn {
-                background: $gray;
-            }
-        }
-        
-        .duration {
-            background: $primaryDark;
-            text-align: center;
-            color: $white;
-            text-transform: uppercase;
-            font-size: .8rem;
-            border-radius: 0px 0px 10px 10px;
-        }
+      .inactiveBtn {
+        background: $gray;
+      }
     }
 
-    .programCard:hover {
-        filter: drop-shadow(0px 0px 1rem $primaryDark);
+    .duration {
+      background: $primaryDark;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      border-radius: 0px 0px 10px 10px;
     }
+  }
+
+  .programCard:hover {
+    filter: drop-shadow(0px 0px 1rem $primaryDark);
+  }
 }
