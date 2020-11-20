@@ -1,0 +1,17 @@
+/* footer section */
+#footer-widgets {
+  text-align: left;
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #footer-widgets {
+    text-align: center;
+
+    button {
+      width: 100%;
+    }
+  }
+}
