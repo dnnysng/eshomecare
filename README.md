@@ -1,3 +1,3 @@
-# E&S Home Care Solutions
+# E&S Academy / Homecare
 
-Styling contents for E&S Homecare Solutions websites built on Wordpress.
+E&S Academy is a medical training academy in NJ.
