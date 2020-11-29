@@ -1,0 +1,159 @@
+/* global */
+
+/* color variables */
+
+$pink: #ff6768;
+$blue: #38a9d1;
+$gray: #333333;
+$black: #131313;
+$white: #fdfdfd;
+
+/* smooth button animation */
+button {
+  transition: 0.3s all ease-in-out;
+}
+
+/* wp adds empty p tags, this hides them */
+p:empty {
+  display: none;
+}
+
+/* social menu */
+div.main-nav > ul#menu-social > li > a {
+  padding: 0px 15px;
+}
+
+/* top-right contact info */
+.contact {
+  background: #ff6768;
+  padding: 13px 15px;
+  border-radius: 0px;
+  margin-left: 2px;
+  text-transform: none;
+  font-size: 0.9rem;
+}
+
+.contact:hover {
+  background: #38a9d1;
+}
+
+/* logo section */
+div.inside-header {
+  max-height: 30px;
+}
+
+img.header-image {
+  max-width: 300px;
+}
+
+/* contact button styling */
+#menu-item-2742 a {
+  border: 2px solid #ff6768;
+  border-radius: 0px;
+  color: #ff6768;
+  line-height: 2.5;
+  transition: 0.3s all ease-in-out;
+}
+
+#menu-item-2742 a:hover {
+  background: #31abd4;
+  border: 2px solid #31abd4;
+  color: #fdfdfd;
+}
+
+@media only screen and (max-width: 1150px) {
+  /* hidden */
+  #secondary-navigation,
+  #mcb-wrap {
+    display: none;
+  }
+
+  /* contact button styling */
+  #menu-item-2742 a {
+    border: none;
+    color: $gray;
+    margin: 0px 0px 16px 0px;
+    line-height: 3.8;
+  }
+
+  #menu-item-2742 a:hover {
+    border: none;
+    background: none;
+    color: $pink;
+  }
+
+  /* logo section */
+  div.inside-header {
+    height: 20px;
+  }
+}
+
+/* end global */
+
+/* homepage */
+
+/* hero section */
+
+section.heroInfo {
+  background: $white;
+  max-width: 600px;
+  padding: 2rem 2rem 0.4rem 2rem;
+  box-shadow: 0px 0px 5px $pink;
+  border-radius: 5px;
+  h2 {
+    color: $black;
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 700;
+  }
+  button {
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #hero {
+    padding-bottom: 1rem;
+  }
+  section.heroInfo {
+    position: relative;
+    margin: 0 auto;
+    top: 60px;
+    max-width: 450px;
+    h2 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #hero {
+    min-height: 550px;
+    background-position: center;
+  }
+  section.heroInfo {
+    top: 180px;
+    h2 {
+      font-size: 1.6rem;
+    }
+    p.heroInfo {
+      display: none;
+    }
+    button {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* end hero section */
+
+/* end homepage */

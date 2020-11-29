@@ -1,0 +1,91 @@
+/* global */
+
+/* color variables */
+
+$pink: #ff6768;
+$blue: #38a9d1;
+$gray: #333333;
+$black: #131313;
+$white: #fdfdfd;
+
+/* smooth button animation */
+button {
+  transition: 0.3s all ease-in-out;
+}
+
+/* wp adds empty p tags, this hides them */
+p:empty {
+  display: none;
+}
+
+/* social menu */
+div.main-nav > ul#menu-social > li > a {
+  padding: 0px 15px;
+}
+
+/* top-right contact info */
+.contact {
+  background: #ff6768;
+  padding: 13px 15px;
+  border-radius: 0px;
+  margin-left: 2px;
+  text-transform: none;
+  font-size: 0.9rem;
+}
+
+.contact:hover {
+  background: #38a9d1;
+}
+
+/* logo section */
+div.inside-header {
+  max-height: 30px;
+}
+
+img.header-image {
+  max-width: 300px;
+}
+
+/* contact button styling */
+#menu-item-2742 a {
+  border: 2px solid #ff6768;
+  border-radius: 0px;
+  color: #ff6768;
+  line-height: 2.5;
+  transition: 0.3s all ease-in-out;
+}
+
+#menu-item-2742 a:hover {
+  background: #31abd4;
+  border: 2px solid #31abd4;
+  color: #fdfdfd;
+}
+
+@media only screen and (max-width: 1150px) {
+  /* hidden */
+  #secondary-navigation,
+  #mcb-wrap {
+    display: none;
+  }
+
+  /* contact button styling */
+  #menu-item-2742 a {
+    border: none;
+    color: $gray;
+    margin: 0px 0px 16px 0px;
+    line-height: 3.8;
+  }
+
+  #menu-item-2742 a:hover {
+    border: none;
+    background: none;
+    color: $pink;
+  }
+
+  /* logo section */
+  div.inside-header {
+    height: 20px;
+  }
+}
+
+/* end global */
