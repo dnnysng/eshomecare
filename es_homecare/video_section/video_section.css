@@ -5,6 +5,7 @@ body {
   max-width: 1200px;
 }
 
+/* video section */
 span.pink {
   color: #ff6768;
 }
@@ -30,6 +31,7 @@ span.pink {
 
 #video_section {
   background: #333333;
+  border-radius: 10px;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
@@ -56,9 +58,37 @@ span.pink {
   line-height: 1.6;
 }
 #mainVideo .bigVideo {
+  height: max-content;
   width: 70%;
   border-radius: 10px;
   box-shadow: 0px 0px 20px #dedede;
 }
+
+@media only screen and (max-width: 1000px) {
+  #mainVideo {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #mainVideo .videoInfo {
+    width: 100%;
+    text-align: center;
+  }
+  #mainVideo .videoInfo h1 {
+    font-size: 2rem;
+  }
+  #mainVideo .videoInfo .descOne {
+    display: none;
+  }
+  #mainVideo .bigVideo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #video_section {
+    display: none;
+  }
+}
+/* end video section */
 
 /*# sourceMappingURL=video_section.css.map */
